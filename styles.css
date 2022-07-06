@@ -1,0 +1,41 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #DDD;
+}
+
+.navbar {
+    color: white;
+    background-color: #333;
+    overflow: hidden;
+}
+
+.navbar a {
+    font-size: 2em;
+    float: right;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 0.25em;
+}
+
+.navbar a:hover:not(.active-tab) {
+    background-color: #444;
+}
+
+.navbar #logo {
+    background-color: #333;
+    float: left;
+}
+
+.content {
+    display: none;
+    background-color: #EEEEEEBB;
+    margin: 5%;
+    padding: 5%;
+}
+
+.active-tab {
+    background-color: cornflowerblue;
+}
+
