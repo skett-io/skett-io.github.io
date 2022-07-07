@@ -8,18 +8,23 @@ body {
     color: white;
     background-color: #333;
     overflow: hidden;
+    height: 53px;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
 }
 
-.navbar a {
+.navbar a:not(.brand-icon) {
     font-size: 2em;
-    float: right;
+    float: left;
     text-decoration: none;
     color: white;
     text-align: center;
     padding: 0.25em;
 }
 
-.navbar a:hover:not(.active-tab) {
+.navbar a:hover:not(.active-tab):not(.brand-icon) {
     background-color: #444;
 }
 
@@ -33,9 +38,29 @@ body {
     background-color: #EEEEEEBB;
     margin: 5%;
     padding: 5%;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
 }
 
 .active-tab {
     background-color: cornflowerblue;
+}
+
+.brand-icon {
+    margin: 2px;
+    width: 53px;
+    float: right;
+}
+
+.brand-icon img {
+    height: 95%;
+    filter: invert(100%) sepia(3%) saturate(10%) hue-rotate(303deg) brightness(102%) contrast(104%);
+}
+
+.brand-icon img:hover {
+    filter: invert(57%) sepia(52%) saturate(2193%) hue-rotate(195deg) brightness(97%) contrast(91%);
 }
 

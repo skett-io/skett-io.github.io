@@ -12,8 +12,7 @@ function on_page_load()
     var a = document.getElementById(`nav-${page}`);
     if (!a)
         a = document.getElementById('nav-home');
-    console.log(a);
-    console.log(div);
+
     a.classList.add('active-tab');
 }
 
